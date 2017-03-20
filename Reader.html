@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,minimal-ui">
+		<meta name="format-detection" content="telephone=no">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/main.css" />
+		<title></title>
+	</head>
+	<body>
+		<div id="root" class="container">
+			<!--屏幕中 上 下隐藏DIV -->
+			<div class="artical_action_mid" id="action_mid"></div>		
+			<div class="next_artical_action_mid" id="next_action_mid"></div>
+			<div class="prev_artical_action_mid" id="prev_action_mid"></div>
+			
+			<!--顶部导航-->
+			<div id="top_nav" class="top_nav" style="display: none">
+				<div class="icon_back"></div>
+				<div class="nav_title">返回 </div>
+			</div>
+		
+			<!-- 内容展示区 -->
+			<div id="fiction_container" class="m_read_content"></div>
+			
+			<!-- 上下章节 -->
+	<!--		<div class="m_button_bar">
+				<ul class="u_tab">
+					<li id="prev_button">上一章</li>
+					<li id="next_button">下一章</li>
+				</ul>
+			</div>
+			<!-- 字体背景  悬浮DIV-->
+			<div class="nav_pannel_bk font_container" style="display: none"></div>
+			<div class="nav_pannel font_container" id="font_container" style="display: none">
+				<div class="child_mod">
+					<span>字号</span>
+					<button id="large_font" class="font_size_button">大</button>
+					<button id="small_font" class="font_size_button">小</button>
+				</div>
+				<div class="child_mod">
+					<span>背景</span>
+					<div class="bk_container">
+						<div class="bk_container_current_1">	
+						</div>
+					</div>
+					<div class="bk_container">
+						<div class="bk_container_current_2">	
+						</div>
+					</div>
+					<div class="bk_container">
+						<div class="bk_container_current_3">	
+						</div>
+					</div>
+					<div class="bk_container">
+						<div class="bk_container_current_4">	
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<!--章节目录-->
+			<div class="chapter_bk" style="display: none">
+				<ul class="chapter_list"></ul>
+			</div>
+						
+			<!--下导航栏 目录 字体 白天黑夜-->
+			<div class="bottom_nav_bk bottom_nav" style="display: none"></div>
+					
+			<div class="bottom_nav bottom-nav" style="display: none">
+				<div class="item menu_button" id="menu_button">
+					<div class="item_warp">
+						<div class="icon  icon_menu"></div>
+						<div class="icon_text">目录</div>
+					</div>
+				</div>
+				<div class="item" id="font_button">
+					<div class="item_warp">
+						<div class="icon icon_ft"></div>
+						<div class="icon_text">显示</div>
+					</div>
+				</div>
+				<div class="item" id="night_button">
+					<div class="item_warp" id="day_icon" style="display: none">
+						<div class="icon_day"></div>
+						<div class="icon_text">白天</div>
+					</div>
+					<div class="item_warp" id="night_icon">
+						<div class="icon_night"></div>
+						<div class="icon_text">夜间</div>
+					</div>
+				</div>
+			</div>		
+		</div>
+		<script type="text/javascript" src="js/lib/jquery-3.1.1.min.js" ></script>
+		<script type="text/javascript" src="js/lib/jquery.jsonp.js" ></script>
+		<script type="text/javascript" src="js/lib/jquery.base64.js" ></script>
+		
+		<script type="text/javascript" src="js/Method.js" ></script>
+		<script type="text/javascript" src="js/ReaderModel.js" ></script>
+		<script type="text/javascript" src="js/EventHanlder.js" ></script>	
+		<script type="text/javascript" src="js/Main.js" ></script>
+	</body>
+</html>
